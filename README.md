@@ -24,3 +24,8 @@ https://golang.org/pkg/fmt/
 > nombre := "Javi"
 5. Para comprobar el formato de una variable:
 > fmt.Printf("%T\n", nombre)
+
+## 03 - Paquetes ##
+
+1. Los paquetes se separan entre espacios, y los que no se usan, se eliminan solos
+2. Creamos una función en otro paquete para invertir un string que reciba por parámetro
