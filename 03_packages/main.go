@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"math"
-	"p1"
 )
 
 func main() {
@@ -12,7 +11,7 @@ func main() {
 	fmt.Println(math.Ceil(2.7))
 	fmt.Println(math.Sqrt(16))
 
-	fmt.Println(p1.Reverse("!oít aloH"))
+	fmt.Println(Reverse("!oít aloH"))
 }
 
 func Reverse(s string) string {
