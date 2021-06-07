@@ -35,7 +35,7 @@ https://golang.org/pkg/fmt/
 Defer - panic - recover
 
 1. La sentencia *defer* permite posponer una función para el final. Cuando acabe la ejecución normal del resto de funciones (main por ejemplo), antes de cerrar el programa, comprueba si hay funciones *defer* pendientes y las ejecuta. Sigue política LIFO, último en entrar, primero en salir - Pila. Este comportamiento se puede comprobar poniendo *defer* a todas las funciones
-2. IMPORTANTE: la acción que vaya a ejecutar la sentencia que tenga *defer* será la misma que la que haría en la ejecución correcta, y no la ejecución que cabría esperar cuando haya acabado todo.
+2. IMPORTANTE: la acción que vaya a ejecutar la sentencia que tenga *defer* será la misma que la que haría en el momento que fuera llamada en la ejecución correcta, y no la ejecución que cabría esperar cuando haya acabado todo.
 3. *Panic*: funciona de forma similar a lanzar excepciones de forma voluntaria en Java
 4. Las sentencias *defer* son ejecutadas **después** de mostrar los mensaje de *panic*
 5. *Recover*: se emplean para capturar *panics* y continuar con la ejecución correcta del programa
